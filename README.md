@@ -12,7 +12,7 @@ This is the MERN stack application of real state listing. It build using the tec
     ```
 ## To start the `backend ` 
 1. ```
-   cd client
+   cd backend
    ```
 2. ```
    npx nodemon
@@ -23,10 +23,10 @@ This is the MERN stack application of real state listing. It build using the tec
 4. Put a `.env` file that will contain two variable.
    
 
-  ```
+     ```
     MONGO_URL = "<add mongo URL>"
     JWT_SECRET="<add secret key>"
-   ```
+     ```
 5.
    ```
    nodemon
