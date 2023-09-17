@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     margin-top: 7.5rem;
+    background-color: rgb(254, 250, 234);
 }
 
 .wrapper {
@@ -50,6 +51,7 @@
 .wrapper > .inputContainer > input{
   border: none;
   outline: none;
+  background-color: rgb(254, 250, 234);
   padding-left: 0.5rem;
 }
 
