@@ -1,5 +1,6 @@
 .container {
   min-height: 100vh;
+  background-color: rgb(254, 250, 234);
   max-height: 100%;
   width: 100%;
   margin-top: 10rem;
@@ -31,6 +32,7 @@
 
 .properties {
   margin-top: 3rem;
+  background-color: cornsilk;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 3rem;
@@ -39,12 +41,13 @@
 .property {
   width: 30%;
   position: relative;
-  padding: 1rem;
-  transform: rotate(-1deg);
-  border-radius: 10px 50px 10px 50px;
-  box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  background-color: rgb(248, 228, 221);
+  transform: rotate(-2deg);
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: -5px 5px 19px -5px rgba(249, 2, 2, 0.735);
+  -webkit-box-shadow: -7px 7px 19px -7px rgb(109, 0, 0);
+  -moz-box-shadow: -5px 5px 19px -5px rgb(232, 2, 2);
   text-decoration: none;
   transition: 150ms all;
 }
@@ -58,9 +61,9 @@
   height: 400px;
   width: 100%;
   object-fit: cover;
-  border-radius: 10px 50px 10px 50px;
+  border-radius: 50px 50px 50px 50px;
   transform: rotate(-1deg);
-  transition: 150ms all;
+  transition: 180ms all;
   cursor: pointer;
 }
 
@@ -82,6 +85,8 @@
   margin-left: 1rem;
   margin-top: 1rem;
   font-size: 22px;
+  background-color: rgb(248, 228, 221);
+  font-family: Arial, Helvetica, sans-serif;
   color: #333;
   text-align: center;
 }
@@ -92,7 +97,8 @@
   left: 2rem;
   color: #fff;
   font-size: 20px;
-  background-color: #0303ce;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #7c0104;
   padding: 0.4rem 1.2rem;
   border-radius: 20px;
   transform: rotate(-1deg);

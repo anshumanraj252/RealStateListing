@@ -29,13 +29,13 @@ const PopularProperties = () => {
   }, [])
 
   return (
-    <div className={classes.container}>
-      <div className={classes.wrapper}>
+    <div className={classes.container} >
+      <div className={classes.wrapper} >
         <div className={classes.titles}>
           <h5>Different types of properties</h5>
           <h2>Best type of properties for you</h2>
         </div>
-        <div className={classes.properties}>
+        <div className={classes.properties} data-aos="fade-top">
           <Link to={`/properties?type=beach&continent=0&priceRange=1`} className={classes.property}>
             <img src={img1} />
             <div className={classes.quantity}>{beachProperties} properties</div>
