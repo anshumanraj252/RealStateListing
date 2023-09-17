@@ -116,10 +116,10 @@ const Navbar = () => {
         </Link>
         <ul className={classes.center}>
           <li onClick={scrollToTop} className={classes.listItem}>
-            Home
+            Home 
           </li>
           <li className={classes.listItem}>
-            About
+            Abouttt
           </li>
           <li className={classes.listItem}>
             Featured
