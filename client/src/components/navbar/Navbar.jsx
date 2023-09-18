@@ -9,6 +9,7 @@ import { BsHouseDoor } from 'react-icons/bs'
 import { logout } from '../../redux/authSlice'
 import { request } from '../../util/fetchAPI'
 import { useEffect } from 'react'
+import imag from '../../assets/realstate.jpeg'
 
 const Navbar = () => {
   const [state, setState] = useState({})
@@ -112,14 +113,16 @@ const Navbar = () => {
     <div className={`${classes.container} ${isScrolled && classes.scrolled}`}>
       <div className={classes.wrapper}>
         <Link to='/' onClick={scrollToTop} className={classes.left}>
-          Real Estate <BsHouseDoor />
+      
+            <img src={imag} width="150" height="54" />
+       
         </Link>
         <ul className={classes.center}>
           <li onClick={scrollToTop} className={classes.listItem}>
             Home 
           </li>
           <li className={classes.listItem}>
-            Abouttt
+            Abouts
           </li>
           <li className={classes.listItem}>
             Featured
