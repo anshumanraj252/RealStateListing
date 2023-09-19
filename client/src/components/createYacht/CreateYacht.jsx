@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { request } from '../../util/fetchAPI'
 import classes from './createYacht.module.css'
+import img from '../../assets/icon.png'
 
 const CreateYacht = () => {
     const [title, setTitle] = useState(null)
@@ -109,7 +110,7 @@ const CreateYacht = () => {
                     </div>
                     <div className={classes.inputBoxImage}>
                         <label htmlFor='image'>Photo    <AiFillFileImage /></label>
-                        <input type="file" id="image" style={{ display: 'none' }} onChange={(e) => setPhoto(e.target.files[0])} />
+                        <input type="file" id="image" style={{backgroundImage:"img" }} onChange={(e) => setPhoto(e.target.files[0])} />
                         {photo && <div style={{ marginTop: '12px' }}>Photo name: {photo.name}</div>}
                     </div>
                     <button type="submit">Post</button>

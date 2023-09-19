@@ -164,14 +164,14 @@
     margin-top: 1.5rem;
     padding: 0.4rem 1rem;
     white-space: nowrap;
-    background-color: #2500ac;
+    background-color: #860000;
     color: #fff;
     cursor: pointer;
 }
 
 .contactOwner:hover {
-    border-color: #2500ac;
-    color: #2500ac;
+    border-color: #7f0000;
+    color: #7c0000;
     background-color: #fff;
 }
 
@@ -322,7 +322,7 @@ a {
 .commentInput>button {
     outline: none;
     border: none;
-    background-color: #0707b5;
+    background-color: #8d0000;
     color: #fff;
     padding: 0.25rem 0.75rem;
     border-radius: 8px;
