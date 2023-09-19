@@ -10,6 +10,7 @@ import { logout } from '../../redux/authSlice'
 import { request } from '../../util/fetchAPI'
 import { useEffect } from 'react'
 import imag from '../../assets/realstate.jpeg'
+import imgIcon from '../../assets/icon.png'
 
 const Navbar = () => {
   const [state, setState] = useState({})
@@ -182,7 +183,7 @@ const Navbar = () => {
               <input value={state?.sqmeters} type="number" placeholder='Sq. meters' name="sqmeters" onChange={handleState} />
               <input value={state?.beds} type="number" placeholder='Beds' name="beds" step={1} min={1} onChange={handleState} />
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', width: '50%' }}>
-                <label htmlFor='photo'>Property picture <AiOutlineFileImage /></label>
+                <label htmlFor='photo'>Property picture <img src={imgIcon} style={{height:"1.5em", width:"1.5em"}} alt="" /></label>
                 <input
                   type="file"
                   id='photo'
@@ -247,7 +248,7 @@ const Navbar = () => {
                       <input value={state?.sqmeters} type="number" placeholder='Sq. meters' name="sqmeters" onChange={handleState} />
                       <input value={state?.beds} type="number" placeholder='Beds' name="beds" step={1} min={1} onChange={handleState} />
                       <div style={{ display: 'flex', alignItems: 'center', gap: '12px', width: '50%' }}>
-                        <label htmlFor='photo'>Property picture <AiOutlineFileImage /></label>
+                        <label htmlFor='photo'>Property picture <img src={imgIcon} style={{height:"1.5em", width:"1.5em"}} alt="" /></label>
                         <input
                           type="file"
                           id='photo'
