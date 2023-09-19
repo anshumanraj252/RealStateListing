@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { request } from '../../util/fetchAPI'
-import { AiOutlineFileImage } from 'react-icons/ai'
+import imgIcon from "../../assets/icon.png"
 import { useSelector } from 'react-redux'
 import classes from './editProperty.module.css'
 
@@ -109,7 +109,7 @@ const EditProperty = () => {
                     <input value={propertyDetails?.sqmeters} type="number" placeholder='Sq. meters' name="sqmeters" onChange={handleState} />
                     <input value={propertyDetails?.beds} type="number" placeholder='Beds' name="beds" step={1} min={1} onChange={handleState} />
                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px', width: '50%' }}>
-                        <label htmlFor='photo'>Property picture <AiOutlineFileImage /></label>
+                        <label htmlFor='photo'>Property picture <img src={imgIcon} alt="" /></label>
                         <input
                             type="file"
                             id='photo'

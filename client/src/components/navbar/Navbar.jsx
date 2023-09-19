@@ -9,6 +9,8 @@ import { BsHouseDoor } from 'react-icons/bs'
 import { logout } from '../../redux/authSlice'
 import { request } from '../../util/fetchAPI'
 import { useEffect } from 'react'
+import imag from '../../assets/realstate.jpeg'
+import imgIcon from '../../assets/icon.png'
 
 const Navbar = () => {
   const [state, setState] = useState({})
@@ -112,14 +114,16 @@ const Navbar = () => {
     <div className={`${classes.container} ${isScrolled && classes.scrolled}`}>
       <div className={classes.wrapper}>
         <Link to='/' onClick={scrollToTop} className={classes.left}>
-          Real Estate <BsHouseDoor />
+      
+            <img src={imag} width="150" height="54" />
+       
         </Link>
         <ul className={classes.center}>
           <li onClick={scrollToTop} className={classes.listItem}>
             Home 
           </li>
           <li className={classes.listItem}>
-            Abouttt
+            Abouts
           </li>
           <li className={classes.listItem}>
             Featured
@@ -179,7 +183,7 @@ const Navbar = () => {
               <input value={state?.sqmeters} type="number" placeholder='Sq. meters' name="sqmeters" onChange={handleState} />
               <input value={state?.beds} type="number" placeholder='Beds' name="beds" step={1} min={1} onChange={handleState} />
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', width: '50%' }}>
-                <label htmlFor='photo'>Property picture <AiOutlineFileImage /></label>
+                <label htmlFor='photo'>Property picture <img src={imgIcon} style={{height:"1.5em", width:"1.5em"}} alt="" /></label>
                 <input
                   type="file"
                   id='photo'
@@ -244,7 +248,7 @@ const Navbar = () => {
                       <input value={state?.sqmeters} type="number" placeholder='Sq. meters' name="sqmeters" onChange={handleState} />
                       <input value={state?.beds} type="number" placeholder='Beds' name="beds" step={1} min={1} onChange={handleState} />
                       <div style={{ display: 'flex', alignItems: 'center', gap: '12px', width: '50%' }}>
-                        <label htmlFor='photo'>Property picture <AiOutlineFileImage /></label>
+                        <label htmlFor='photo'>Property picture <img src={imgIcon} style={{height:"1.5em", width:"1.5em"}} alt="" /></label>
                         <input
                           type="file"
                           id='photo'
